@@ -24,6 +24,7 @@ async function main() {
   } else {
     setup = await (await ethers.getContractFactory("Setup")).deploy()
   }
+  await setup.waitForDeployment();
 
   // ***********************************************************
   // Do stuff here
