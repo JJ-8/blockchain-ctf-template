@@ -33,7 +33,7 @@ let config: HardhatUserConfig = {
   },
   typechain: {
     outDir: "./build/typechain/",
-    target: "ethers-v5",
+    target: "ethers-v6",
   },
 }
 
