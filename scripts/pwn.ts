@@ -1,14 +1,9 @@
-import chai from "chai"
 import dotenv from "dotenv"
-import { solidity } from "ethereum-waffle"
 import { ethers, network } from "hardhat"
 import { Setup } from "../build/typechain"
 import { ensureEnvVar } from "../test/utils"
 
 dotenv.config()
-
-const { expect } = chai
-chai.use(solidity)
 
 async function main() {
   // Load the first signer
