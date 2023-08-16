@@ -37,8 +37,10 @@ npx hardhat run scripts/pwn.ts --network ctf
 
 ### Solidity Compilation
 
+Using hardhat:
+
 ```shell
-npx hardhat compile
+yarn run compile
 ```
 
 Using forge:
@@ -56,7 +58,7 @@ My preferred installation of python is to use pyenv. Then use mkvenv script to s
 First, make sure your `.env` file is created and is filled with relevant info. Refer to `.env.template`.
 
 ```shell
-npx hardhat run scripts/pwn.ts --network ctf
+yarn run ctf
 ```
 
 ### Run against local network
@@ -64,7 +66,7 @@ npx hardhat run scripts/pwn.ts --network ctf
 You could set up a docker but I found deploying the setup contracts myself to be easiest.
 
 ```shell
-npx hardhat run scripts/pwn.ts --network hardhat
+yarn run local
 ```
 
 Have fun hacking!

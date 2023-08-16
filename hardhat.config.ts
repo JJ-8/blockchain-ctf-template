@@ -8,14 +8,14 @@ import { ensureEnvVar } from "./test/utils"
 dotenv.config()
 
 let config: HardhatUserConfig = {
-  defaultNetwork: "ctf",
+  defaultNetwork: "hardhat",
   networks: {
     hardhat: {
     },
     ctf: {
       url: ensureEnvVar("RPC_URL"),
       accounts: [
-        ensureEnvVar("PRIVATE_KEY"),
+        // ensureEnvVar("PRIVATE_KEY"),
       ],
     },
   },
