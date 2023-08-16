@@ -19,11 +19,11 @@ async function main() {
 
   // Load the contract from an address if we are running against CTF network
   // If not, deploy it for testing locally (hardhat network)
-  // if (network.name == "ctf") {
-  //   setup = await ethers.getContractAt("Setup", ensureEnvVar("CONTRACT_ADDRESS"))
-  // } else {
-  //   setup = await (await ethers.getContractFactory("Setup")).deploy()
-  // }
+  if (network.name == "ctf") {
+    setup = await ethers.getContractAt("Setup", ensureEnvVar("CONTRACT_ADDRESS"))
+  } else {
+    setup = await (await ethers.getContractFactory("Setup")).deploy()
+  }
 
   // ***********************************************************
   // Do stuff here
