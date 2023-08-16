@@ -1,4 +1,4 @@
-# Sample Hardhat Project
+# Blockchain CTF Template: solve all your problems with TypeScript and Ethereum
 
 ### Installation
 
@@ -7,33 +7,6 @@ yarn install
 ```
 
 Do you see a big diff in git when cloning on Linux? Set `git config --global core.autocrlf true`.
-
-### Build challenge images
-
-First download the challenge files from paradigm.xyz or from unofficial archive repo.
-Then add these two env variables to the challenge Dockerfile.
-
-```
-ENV ENV=dev
-ENV ETH_RPC_URL=https://eth-mainnet.alchemyapi.io/v2/apikey
-```
-
-Then you can successfully build and run the image with approrpiate ports published.
-
-```bash
-docker build -t challenge .
-docker run -p 31337:31337 -p 8545:8545 challenge
-nc localhost 31337
-```
-
-You can use any value for team id.
-
-Once you update your .env file with the information you got from above,
-try running pwn.ts file with hardhat.
-
-```
-npx hardhat run scripts/pwn.ts --network ctf
-```
 
 ### Solidity Compilation
 
