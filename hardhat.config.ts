@@ -1,4 +1,4 @@
-import "@nomiclabs/hardhat-ethers"
+import "@nomicfoundation/hardhat-ethers"
 import "@typechain/hardhat"
 
 import { HardhatUserConfig, task } from "hardhat/config"
