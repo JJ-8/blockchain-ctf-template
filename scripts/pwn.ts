@@ -27,7 +27,7 @@ async function main() {
 
   // ***********************************************************
   // Do stuff here
-  // console.log(await setup.isSolved())
+  console.log(await setup.isSolved())
 }
 
 // We recommend this pattern to be able to use async/await everywhere
