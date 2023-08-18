@@ -6,6 +6,14 @@ import { ensureEnvVar } from "../test/utils"
 dotenv.config()
 
 async function main() {
+    // pre-checks for sanity
+  if ((await ethers.getSigners()).length == 0) {
+    console.log(`\x1b[41m[!]\x1b[0m No accounts available, please check the accounts in hardhat.config.ts`)
+    return false;
+  }
+
+  // ***********************************************************
+
   // Load the first signer
   // Under hardhat network, this will be pre-loaded by hardhat
   // If running against CTF network, it is the first account in the list in hardhat.config.ts
