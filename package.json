@@ -4,7 +4,7 @@
 		"compile": "hardhat compile",
 		"local": "hardhat run scripts/pwn.ts --network hardhat",
 		"ctf": "hardhat run scripts/pwn.ts --network ctf",
-		"clean": "rm -rf node_modules/ build/ .env .yarn/cache"
+		"clean": "rm -rf node_modules/ build/ .env .yarn/cache .git"
 	},
 	"devDependencies": {
 		"@nomicfoundation/hardhat-chai-matchers": "2",
