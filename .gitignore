@@ -6,7 +6,6 @@ typechain
 typechain-types
 
 #Hardhat files
-cache
 artifacts
 
 # Compiler files
