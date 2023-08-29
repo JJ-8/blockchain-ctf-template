@@ -23,5 +23,14 @@
 		"typechain": "^8.3.1",
 		"typescript": "^5.1.6"
 	},
-	"packageManager": "yarn@3.6.3"
+	"packageManager": "yarn@3.6.3",
+	"dependencies": {
+		"@nomicfoundation/ethereumjs-trie": "^6.0.2",
+		"@nomicfoundation/ethereumjs-util": "^9.0.2",
+		"@nomicfoundation/hardhat-network-helpers": "^1.0.9",
+		"@types/chai": "^4.3.5",
+		"chai": "^4.3.8",
+		"hardhat-gas-reporter": "^1.0.9",
+		"solidity-coverage": "^0.8.4"
+	}
 }
