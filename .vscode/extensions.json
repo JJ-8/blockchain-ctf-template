@@ -1,7 +1,8 @@
 {
 	"recommendations": [
 		"NomicFoundation.hardhat-solidity",
-		"esbenp.prettier-vscode"
+		"esbenp.prettier-vscode",
+		"tintinweb.solidity-visual-auditor"
 	],
 	"unwantedRecommendations": ["juanblanco.solidity"]
 }
